@@ -6,7 +6,13 @@ Simple bindings to use excellent `RHVoice <https://github.com/Olga-Yakovleva/RHV
 
 Usage
 ------------------
-Add it into a project:
+Download or clone this project, then install it:
+
+.. code::
+
+	$ python3 setup.py install
+
+Add it into your project:
 
 .. code::
 
@@ -28,6 +34,11 @@ Or to be saved by this class:
 
 	>>> RHVoice("Дневник писателя", output_file="wave.wav")
 
-TODO
+Things to do
 ------------------
+1) Test it with Python 2
+2) Add to PyPi
+
 As you can see, code base is simple. It can be improved so feel free to suggest patches with new features.
+
+
