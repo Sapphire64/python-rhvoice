@@ -6,7 +6,7 @@
     ~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
     :copyright: (c) 2013 Anton Vlasenko
-    :license: MIT License (Expat). See http://www.debian.org/legal/licenses/mit for details.
+    :license: MIT License (Expat). See LICENSE.txt.
 """
 
 from subprocess import Popen, PIPE, STDOUT, check_call
@@ -50,7 +50,7 @@ class RHVoice(object):
         except OSError:
             print ("Cannot create new process for RHVoice")
             raise
-        audio = p.communicate(input=text_to_pronounce)[0]
+        audio = p.communicate(input=text_to_pronounce.encode('utf-8'))[0]
 
         # TODO: Here can be made some coding to Lame etc: "lame -V 5"
 
