@@ -10,7 +10,7 @@ Add it into a project:
 
 .. code::
 
-	>>> from python-rhvoice import RHVoice
+	>>> from rhvoice import RHVoice
 
 
 There are two ways to use it, as direct audio output to be manipulated by you:
