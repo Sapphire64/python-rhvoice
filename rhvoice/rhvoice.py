@@ -16,11 +16,11 @@ DEVNULL = open('/dev/null', 'w') # Silent output
 try:
     check_call(["RHVoice", "--help"], stdout=DEVNULL)
 except OSError as e:
-    DEVNULL.close()
     print ("Cannot run RHVoice, make sure RHVoice is \
              installed and accessible for current user. Error message: %s" % e)
     raise
-DEVNULL.close()
+finally:
+    DEVNULL.close()
 
 
 class RHVoice(object):
